@@ -1,6 +1,4 @@
 body {
-    /* width: 1260px;
-    height: 1423px; */
     font-family: "Roboto";
     margin-top: 30px;
     background-color: #333333;
@@ -8,7 +6,7 @@ body {
 
 @font-face {
     font-family: "Roboto";
-    src: url("./fonts/Roboto-Regular.woff2") format("woff2");
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -16,7 +14,7 @@ body {
 
 @font-face {
     font-family: "Roboto";
-    src: url("./fonts/Roboto-Bold.woff2") format("woff2");
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -70,16 +68,19 @@ body {
     width: 101px;
     height: 29px;
     color: #8A72FF;
-    font-size: 21px;
+    font-size: 24px;
     font-family: "Roboto";
     font-weight: 700;
-    text-align: center
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
 }
 
 .qalogo {
     background-color: #333333;
     position: absolute;
-    top: 10px;
+    top: 7px;
     left: 15px;
 }
 
@@ -124,16 +125,12 @@ body {
 }
 
 .nav {
-
     width: 961px;
     height: 49px;
-    /* background-color: blue; */
-
 }
 
 .navmenu {
     display: flex;
-
     list-style: none;
     width: auto;
     height: 49px;
@@ -142,10 +139,7 @@ body {
 
 
 .navmenu li {
-    /* padding-top: 15px;
-    display: inline-block; */
     width: calc(100% / 8);
-    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,26 +148,71 @@ body {
 .navmenu li.active {
     background-color: #74C4FF;
 }
-
+/* .active a{
+    color: #333333;
+} */
 .navmenu li a {
     color: #FFFFFF;
     font-size: 14px;
     text-align: center;
-    font-weight: regular;
+    font-family: "Roboto";
+    font-weight: 400;
 }
 
 .navmenu li:hover {
-    /* width: auto;
-    height: auto; */
     background-color: #74c4ff8c;
 }
+
 
 .main {
     width: 962px;
     height: 1130px;
-    /* background-color: sienna; */
+    margin-top: 15px;
 }
 
+
+.banner {
+    width: 961px;
+    height: 332px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-image: url(../image/images1.svg);
+}
+
+
+
+.txt__1 {
+    width: 509px;
+    height: 150px;
+    color: #74C4FF;
+    font-size: 64px;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin: 18px 0 0 42px;
+}
+
+.txt__2 {
+    width: 451px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    margin: 3px 0 0 42px;
+}
+
+.button1 {
+    width: 125px;
+    height: 34px;
+    background-color: #BE72FF;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 700;
+    margin: 10px 0 0 42px;
+    border-radius: 3px;
+}
+
+/* 
 .image-background {
     display: flex;
     justify-content: center;
@@ -225,7 +264,7 @@ body {
     position: absolute;
     top: 93px;
     left: 1px;
-}
+} */
 
 .main-content {
     width: 940px;
@@ -235,15 +274,11 @@ body {
     flex-wrap: wrap;
     margin-top: 20px;
     margin-left: 10px;
-    /* background-color: aquamarine; */
 }
 
 .info1 {
     width: 460px;
     height: 173px;
-
-
-    /* background-color: #ce1bdf; */
 }
 
 .captitle1 {
@@ -262,10 +297,10 @@ body {
 }
 
 .title1 {
-    width: 138px;
-    height: 17px;
+    font-family: "Roboto";
+    font-weight: 700;
     font-size: 14px;
-    margin: 0px 3px;
+    margin: 0px 5px;
     color: #FFFFFF;
 }
 
@@ -288,7 +323,7 @@ body {
     padding: 1px;
     border: 2px solid #74C4FF;
     margin-top: 10px;
-    margin-right: 19px;
+    margin-right: 11px;
     margin-left: 1px;
 }
 
@@ -298,14 +333,18 @@ body {
 }
 
 .textp1 {
+    width: 300px;
+    height: 105px;
     font-size: 12px;
     color: #FFFFFF;
     font-family: "Roboto";
     font-weight: 400;
-    margin-bottom: 23px;
+    margin-bottom: 21px;
 }
 
 .link1 a {
+    font-family: "Roboto";
+    font-weight: 400;
     font-size: 12px;
     color: #FFFFFF;
 }
@@ -319,7 +358,6 @@ body {
     width: 460px;
     height: 173px;
     margin-left: 20px;
-    /* background-color: blue; */
 }
 
 .captitle1-2 {
@@ -337,8 +375,10 @@ body {
 }
 
 .title2 {
+    font-family: "Roboto";
+    font-weight: 700;
     font-size: 14px;
-    margin: 0px 1px;
+    margin: 0px 4px;
     color: #FFFFFF;
 }
 
@@ -349,6 +389,8 @@ body {
 }
 
 .img-text2 {
+    font-family: "Roboto";
+    font-weight: 400;
     display: flex;
     align-items: flex-start;
 }
@@ -369,12 +411,16 @@ body {
 }
 
 .textp2 {
+    width: 300px;
+    height: 105px;
     font-size: 12px;
     color: #FFFFFF;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
 }
 
 .author {
+    font-family: "Roboto";
+    font-weight: 400;
     font-size: 12px;
     color: #FFFFFF;
 }
@@ -401,10 +447,10 @@ body {
 }
 
 .title3 {
-    width: 138px;
-    height: 17px;
+    font-family: "Roboto";
+    font-weight: 700;
     font-size: 14px;
-    margin: 0px 3px;
+    margin: 0px 5px;
     color: #FFFFFF;
 }
 
@@ -436,7 +482,6 @@ body {
     height: 173px;
     margin-left: 20px;
     margin-top: 33px;
-    /* background-color: #333333; */
 }
 
 .captitle1-4 {
@@ -454,8 +499,10 @@ body {
 }
 
 .title4 {
+    font-family: "Roboto";
+    font-weight: 700;
     font-size: 14px;
-    margin: 0px 1px;
+    margin: 0px 4px;
     color: #FFFFFF;
 }
 
@@ -489,13 +536,11 @@ body {
     flex-direction: row;
     margin-top: 20px;
     margin-left: 10px;
-    /* background-color: yellow; */
 }
 
 .servise {
     width: 302px;
     height: 180px;
-    /* background-color: brown; */
 }
 
 .captitle-5 {
@@ -530,8 +575,6 @@ body {
     width: 302px;
     height: 180px;
     margin: 0px 18px;
-    /* background-color: red; */
-
 }
 
 .captitle-6 {
@@ -574,7 +617,6 @@ body {
 .lorem-ipsum1 {
     display: flex;
     flex-direction: row;
-    /* background-color: #000000; */
     width: 300px;
     height: 45px;
 }
@@ -607,22 +649,19 @@ body {
 .lorem-ipsum2 {
     display: flex;
     flex-direction: row;
-    margin: 5px 0px;
-    /* background-color: #333333; */
+    margin: 8px 0px;
 }
 
 
 .lorem-ipsum3 {
     display: flex;
     flex-direction: row;
-    /* background-color: rgb(56, 4, 49); */
 }
 
 .main-clients {
     width: 960px;
     height: 157px;
     margin-top: 20px;
-    /* background-color: darkgreen; */
 }
 
 .captitle-7 {
@@ -641,7 +680,10 @@ body {
 }
 
 .title-7 {
+    font-family: "Roboto";
+    font-weight: 700;
     font-size: 14px;
+    margin: 0px 3px;
     color: #FFFFFF;
 }
 
