@@ -41,87 +41,78 @@ body {
     height: 113px;
 }
 
+
 .cap {
+    width: 961px;
+    height: 48px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width: 720px) {
+    .cap {
+        width: 700px;
+    }
 }
 
 .logo {
     width: 118px;
     height: 48px;
-    position: relative;
+    display: flex;
+    align-items: flex-start;
 }
 
-.logo1 {
-    width: 47px;
-    height: 43px;
-    background-color: #333333;
-    position: absolute;
-    top: -1px;
-    left: 0px;
-    border-radius: 20px;
+.element-1 {
+    width: 44px;
+    height: 42px;
     border: 3px solid #74C4FF;
-
+    border-radius: 20px;
 }
 
-.qalogo {
+.logo-txt {
     width: 101px;
     height: 29px;
     color: #8A72FF;
+    background-color: #333333;
+    margin: 10px 0 0 -33px;
     font-size: 24px;
     font-family: "Roboto";
     font-weight: 700;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* text-align: center; */
-}
-
-.qalogo {
-    background-color: #333333;
-    position: absolute;
-    top: 7px;
-    left: 15px;
 }
 
 .search {
-    width: 215px;
-    height: 33px;
-    border-radius: 3px;
-}
-
-.search-div {
     width: 201px;
     height: 33px;
-    position: relative;
-
-
+    border: 1px solid #BE72FF;
+    border-radius: 3px;
+    display: flex;
+    align-items: flex-start;
 }
 
-.search-input {
-    width: 208px;
-    height: 29px;
+.search-txt {
+    width: 123px;
+    height: 31px;
+    border: 0;
+    padding: 0;
+    margin: 1px 3px;
+    background-color: #333333;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.button-search {
+    width: 72px;
+    height: 33px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-shadow: #74C4FF -1px 1px 0px;
     border-radius: 3px;
     border: 1px solid #BE72FF;
-    background-color: #333333;
-
-
-}
-
-.search-btn {
-    width: 72px;
-    height: 31px;
     padding: 0;
-    border: 0;
+    color: #333333;
     background-color: #BE72FF;
-    border-radius: 3px;
-    position: absolute;
-    top: 1px;
-    left: 144px;
-    font-size: 14px;
-    font-family: "Roboto";
-    font-weight: 700;
-    color: #74C4FF;
 }
 
 .nav {
@@ -137,7 +128,6 @@ body {
     padding: 0;
 }
 
-
 .navmenu li {
     width: calc(100% / 8);
     display: flex;
@@ -145,12 +135,16 @@ body {
     align-items: center;
 }
 
+@media(max-width: 720px) {
+    .navmenu {
+        width: 700px;
+    }
+}
+
 .navmenu li.active {
     background-color: #74C4FF;
 }
-/* .active a{
-    color: #333333;
-} */
+
 .navmenu li a {
     color: #FFFFFF;
     font-size: 14px;
@@ -205,66 +199,14 @@ body {
     width: 125px;
     height: 34px;
     background-color: #BE72FF;
+    border: 1px solid #BE72FF;
+    padding: 0;
     font-size: 14px;
     font-family: "Roboto";
     font-weight: 700;
     margin: 10px 0 0 42px;
     border-radius: 3px;
 }
-
-/* 
-.image-background {
-    display: flex;
-    justify-content: center;
-    width: 961px;
-    height: 332px;
-}
-
-.image {
-    width: 961px;
-    height: 332px;
-}
-
-.banner {
-    position: relative;
-}
-
-.text1 {
-    position: absolute;
-    width: 509px;
-    height: 150px;
-    top: 21px;
-    right: 408px;
-    font-size: 64px;
-    color: #74C4FF;
-}
-
-.box {
-    position: absolute;
-    width: 451px;
-    height: 133px;
-    top: 176px;
-    right: 460px;
-}
-
-.text2 {
-    width: 400px;
-    font-size: 14px;
-    color: #FFFFFF;
-}
-
-.button {
-    background-color: #BE72FF;
-    color: #333333;
-    width: 125px;
-    height: 34px;
-    font-size: 14px;
-    font-weight: bold;
-    border: 0;
-    position: absolute;
-    top: 93px;
-    left: 1px;
-} */
 
 .main-content {
     width: 940px;
@@ -429,7 +371,6 @@ body {
     width: 460px;
     height: 173px;
     margin-top: 33px;
-    /* background-color: #8A72FF; */
 }
 
 .captitle-3 {
