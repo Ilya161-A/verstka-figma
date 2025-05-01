@@ -152,11 +152,11 @@ body {
     font-family: "Roboto";
     font-weight: 400;
 }
-
+@media( hover: hover){
 .navmenu li:hover {
     background-color: #74c4ff8c;
 }
-
+}
 
 .main {
     width: 962px;
@@ -173,7 +173,6 @@ body {
     margin: auto;
     background-image: url(../image/images1.svg);
 }
-
 
 
 .txt__1 {
@@ -207,6 +206,29 @@ body {
     margin: 10px 0 0 42px;
     border-radius: 3px;
 }
+
+@media(max-width: 720px) {
+    .banner {
+        width: 700px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .txt__1 {
+        width: 509px;
+        height: 121px;
+        font-size: 43px;
+    }
+
+    .txt__2 {
+        margin-top: -16px;
+    }
+
+    .button1 {
+        margin-bottom: 20px;
+    }
+}
+
 
 .main-content {
     width: 940px;
@@ -468,6 +490,29 @@ body {
     margin-left: 0px;
 }
 
+@media(max-width: 720px) {
+    .main-content {
+        min-height: 100vh;
+        width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info2,
+    .info4 {
+        margin: 0px;
+    }
+
+    .info2 {
+        margin-top: 10px;
+    }
+
+    .info3,
+    .info4 {
+        margin-top: 10px;
+    }
+}
 
 
 .add-info {
@@ -599,6 +644,23 @@ body {
     flex-direction: row;
 }
 
+@media(max-width:720px) {
+    .add-info {
+        min-width: 73vh;
+        min-height: 51vh;
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* flex-direction: column;
+        align-items: center; */
+    }
+
+    /* .resent-posts{
+    margin: 20px 0px;
+} */
+}
+
 .main-clients {
     width: 960px;
     height: 157px;
@@ -674,6 +736,21 @@ body {
     border-radius: 20px;
 }
 
+@media(max-width:720px) {
+    .main-clients{
+        margin-top: 0px;
+    }
+    .rectangle-7{
+        width: 600px;
+    }
+    .list-img {
+        width: 690px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
 .footer {
     width: 1260px;
     height: 95px;
@@ -690,4 +767,10 @@ body {
     font-family: "Roboto";
     font-weight: 700;
 
+}
+@media(max-width:720px){
+    .footer{
+        width: 700px;
+        margin-top: 550px;
+    }
 }
